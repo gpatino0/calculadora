@@ -1,7 +1,7 @@
 {
-"name":"#calculadora",
-"short_name":"#calculadora",
-"description": "#calculadora para el ssu",
+"name":"calculadora",
+"short_name":"calculadora",
+"description": "calculadora para el ssu",
 "background_color": "#79a3b1",
 "theme_color": "#456268",
 "orientation": "portrait",
