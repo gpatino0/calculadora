@@ -1,4 +1,4 @@
-const cache_name = 'cacheNueva',
+const cache_name = 'cacheNueva1',
 urlsToCache = [
     './',
     'estilo.css',
