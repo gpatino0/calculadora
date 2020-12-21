@@ -1,12 +1,14 @@
-const cache_name = 'caches',
+const cache_name = 'caches1',
 urlsToCache = [
     './',
     'estilo.css',
     'app.js',
+    'index.html',
     'android-chrome-192x192.png',
     'android-chrome-512x512.png',
     'favicon-32x32.png',
     'favicon-16x16.png',
+    'apple-touch-icon.png'
     
 ]
 
