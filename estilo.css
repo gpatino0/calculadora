@@ -73,13 +73,3 @@ body{
 } 
 
 
-
-  @media(max-width: 1024px){
-    .contenido-calculadora{
-      width: 200px;
-      height: 300px;
-    
-    }
-   
-  
-  }
