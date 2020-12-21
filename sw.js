@@ -1,4 +1,4 @@
-const cache_name = 'cache5',
+const cache_name = 'caches',
 urlsToCache = [
     './',
     'estilo.css',
@@ -12,15 +12,15 @@ urlsToCache = [
 
 //para funcionar sin conexion
 self.addEventListener('install', e => {
-    e.waitUntil(
-        caches.open(cache_name)
-          .then(async cache => {
-            await cache.addAll(urlsToCache)
-            return self.skipWaiting()
-          })
-          .catch(err => console.log('Falló registro de cache', err))
-      )
-    })
+  e.waitUntil(
+      caches.open(cache_name)
+        .then(cache => {
+          return cache.addAll(urlsToCache)
+            .then(() => self.skipWaiting())
+        })
+        .catch(err => console.log('Falló registro de cache', err))
+    )
+  })
 //para funcionar sin conexion
 self.addEventListener('activate', e => {
     const cacheWhitelist = [cache_name]
