@@ -14,9 +14,9 @@ urlsToCache = [
 self.addEventListener('install', e => {
     e.waitUntil(
         caches.open(cache_name)
-          .then(cache => {
-            return cache.addAll(urlsToCache)
-              .then(() => self.skipWaiting())
+          .then(async cache => {
+            await cache.addAll(urlsToCache)
+            return self.skipWaiting()
           })
           .catch(err => console.log('Falló registro de cache', err))
       )
